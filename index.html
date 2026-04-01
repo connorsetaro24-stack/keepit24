@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alive@keep;t 24 — You Are Not Alone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo-area">
+        <img src="logo.jpg" alt="alive@keep;t 24 Logo" class="logo-img">
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#team">The Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#alive-water">Alive Water</a></li>
+        <li><a href="#bible-verse">Daily Word</a></li>
+        <li><a href="#reels">Reels</a></li>
+        <li><a href="#churches">Find a Church</a></li>
+        <li><a href="#join">Join Us</a></li>
+        <li><a href="#contact" class="nav-cta">Get Help</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="floating-24s" aria-hidden="true">
+      <span class="float-24 f24-1"><span class="w">2</span><span class="r">4</span></span>
+      <span class="float-24 f24-2"><span class="w">2</span><span class="r">4</span></span>
+      <span class="float-24 f24-3"><span class="w">2</span><span class="r">4</span></span>
+      <span class="float-24 f24-4"><span class="w">2</span><span class="r">4</span></span>
+      <span class="float-24 f24-5"><span class="w">2</span><span class="r">4</span></span>
+    </div>
+    <div class="boxing-gloves-bg" aria-hidden="true">
+      <img src="boxing-gloves.png" alt="" class="gloves-photo">
+    </div>
+    <div class="hero-content">
+      <img src="logo.jpg" alt="alive@keep;t 24" class="hero-logo">
+      <p class="hero-tagline">Brotherhood. Recovery. Purpose.</p>
+      <h1>You Are <span class="text-red">Not</span> Alone</h1>
+      <p class="hero-sub">Fighting anxiety, depression, addiction — we stand with you. Every round, every day, every hour. alive@keep;t 24 is your corner.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get Help Now</a>
+        <a href="#about" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+        <p>Always Here For You</p>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="100">0</span><span class="stat-suffix">+</span>
+        <p>Lives Changed</p>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="1">0</span><span class="stat-suffix"></span>
+        <p>Brotherhood</p>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="365">0</span><span class="stat-suffix"> days</span>
+        <p>A Year of Purpose</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER / ABOUT SECTION -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Beginning</span>
+        <h2>The Founder's <span class="text-red">Story</span></h2>
+      </div>
+      <div class="founder-grid">
+        <div class="founder-image-area">
+          <img src="founderphoto.jpg" alt="Founder" class="founder-photo" id="founderPhotoImg">
+          <div class="founder-badge">
+            <img src="boxing-gloves.png" alt="Boxing gloves" width="80">
+          </div>
+        </div>
+        <div class="founder-story">
+          <h3 id="founderTitleEl">From the Darkest Round to the Brightest Corner</h3>
+          <p id="founderP1El">Every fighter has a story. The founder of alive@keep;t 24 knows what it feels like to be knocked down by life — the weight of addiction, the suffocating grip of depression, the loneliness that comes when you think nobody understands.</p>
+          <p id="founderP2El">But through faith, brotherhood, and the relentless decision to keep fighting, a new chapter began. alive@keep;t 24 was born from that fire — a movement to help men find their feet again, to build each other up, and to prove that no round is the last round.</p>
+          <p class="founder-quote" id="founderQuoteEl">"I didn't just survive. I chose to be alive — and I want that for every brother out there."</p>
+          <a href="https://youtu.be/wims6bb3aP0?si=m0SCBZBNK57NXMSS" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 24px;" id="founderVideoEl">Watch My Testimony</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section id="team" class="section team-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Your Corner Team</span>
+        <h2>Meet The <span class="text-red">Team</span></h2>
+        <p class="section-desc">These are the people in your corner. Real men who've been through it and are here to help you fight.</p>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card" id="teamCard1">
+          <div class="team-photo">
+            <img src="teammember1.jpg" alt="Connor Setaro">
+          </div>
+          <h4 id="t1Name">Connor Setaro</h4>
+          <span class="team-role" id="t1Role">Counselor / Mentor</span>
+          <p class="team-testimonial" id="t1Test">"I know what rock bottom looks like. Now I help others climb out — because no one should fight alone."</p>
+          <div class="team-contact">
+            <a href="tel:0623374768" class="btn btn-small" id="t1Phone">Call: 062 337 4768</a>
+            <a href="mailto:connorsetaro24@gmail.com" class="btn btn-small btn-outline-sm" id="t1Email">Email</a>
+          </div>
+        </div>
+
+        <div class="team-card" id="teamCard2">
+          <div class="team-photo">
+            <img src="teammember2.jpg" alt="Ryan Elton">
+          </div>
+          <h4 id="t2Name">Ryan Elton</h4>
+          <span class="team-role" id="t2Role">Recovery Support</span>
+          <p class="team-testimonial" id="t2Test">"Every man deserves a second chance. I'm living proof that change is possible."</p>
+          <div class="team-contact">
+            <a href="tel:0761501877" class="btn btn-small" id="t2Phone">Call: 076 150 1877</a>
+            <a href="mailto:sanityeast@gmail.com" class="btn btn-small btn-outline-sm" id="t2Email">Email</a>
+          </div>
+        </div>
+
+        <div class="team-card" id="teamCard3">
+          <div class="team-photo">
+            <img src="teammember3.jpg" alt="Gary Setaro">
+          </div>
+          <h4 id="t3Name">Gary Setaro</h4>
+          <span class="team-role" id="t3Role">Outreach Coordinator</span>
+          <p class="team-testimonial" id="t3Test">"Brotherhood isn't just a word — it's a lifeline. Reach out, brother."</p>
+          <div class="team-contact">
+            <a href="tel:0630432552" class="btn btn-small" id="t3Phone">Call: 063 043 2552</a>
+            <a href="mailto:gary.setaro123@gmail.com" class="btn btn-small btn-outline-sm" id="t3Email">Email</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Real Stories</span>
+        <h2>Share Your <span class="text-red">Story</span></h2>
+        <p class="section-desc">You are not alone in this fight. Read what brothers have been through — or share your own story anonymously.</p>
+      </div>
+
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p>I was drowning in alcohol for 8 years. I lost my family, my job, everything. alive@keep;t 24 didn't judge me — they just showed up. Today I'm 14 months clean.</p>
+          <div class="testimonial-author">
+            <span class="author-name">Anonymous Brother</span>
+            <span class="author-detail">14 months sober</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p>Depression had me thinking there was no way out. The brotherhood here showed me that real men talk about what they're going through. That saved my life.</p>
+          <div class="testimonial-author">
+            <span class="author-name">Anonymous Brother</span>
+            <span class="author-detail">Beating depression daily</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p>Anxiety controlled every part of my day. I couldn't work, couldn't sleep. Finding this community gave me the tools and the brothers to fight back.</p>
+          <div class="testimonial-author">
+            <span class="author-name">Anonymous Brother</span>
+            <span class="author-detail">Fighting anxiety</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Share Your Story Form -->
+      <div class="share-story">
+        <h3>Share Your Story</h3>
+        <p>Your story could be the reason someone else keeps fighting. Share anonymously if you wish.</p>
+        <form id="storyForm" onsubmit="submitStory(event)">
+          <div class="form-row">
+            <input type="text" placeholder="Your name (or 'Anonymous')" id="storyName" required>
+            <input type="text" placeholder="Your journey (e.g. '6 months sober')" id="storyJourney">
+          </div>
+          <textarea placeholder="Tell your story, brother. What have you been through? What are you fighting? This is a safe space..." id="storyText" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Share My Story</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALIVE WATER SECTION -->
+  <section id="alive-water" class="section water-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Stay Hydrated, Stay Alive</span>
+        <h2>Alive <span class="text-red">Water</span></h2>
+        <p class="section-desc">The best water in Africa. Pure, clean, and life-giving — just like the mission behind it.</p>
+      </div>
+      <div class="water-showcase">
+        <div class="water-gallery">
+          <div class="water-image">
+            <img src="waterphoto1.jpg" alt="Alive Water">
+          </div>
+          <div class="water-image">
+            <img src="waterphoto2.jpg" alt="Alive Water">
+          </div>
+          <div class="water-image">
+            <img src="waterphoto3.jpg" alt="Alive Water">
+          </div>
+        </div>
+        <div class="water-info">
+          <h3 id="waterHeadlineEl">Pure. African. Alive.</h3>
+          <ul class="water-features">
+            <li><span class="water-icon">&#9679;</span><span id="wf1">Naturally sourced from Africa's purest springs</span></li>
+            <li><span class="water-icon">&#9679;</span><span id="wf2">Every bottle supports the alive@keep;t 24 mission</span></li>
+            <li><span class="water-icon">&#9679;</span><span id="wf3">Clean water, clean living — it all starts here</span></li>
+            <li><span class="water-icon">&#9679;</span><span id="wf4">Available across South Africa</span></li>
+          </ul>
+          <a href="mailto:alivewater@gmail.com?subject=Alive Water Order" class="btn btn-primary" id="waterOrderEl">Order Alive Water</a>
+          <a href="https://youtube.com/shorts/gA0fx68UNNw?si=gjsKfGTWgD8MN8S3" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: 12px;" id="waterVideoEl">Watch Video</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIBLE VERSE OF THE DAY -->
+  <section id="bible-verse" class="section verse-section">
+    <div class="container">
+      <div class="verse-card">
+        <div class="verse-cross">
+          <svg viewBox="0 0 60 80" width="50" height="67">
+            <rect x="22" y="0" width="16" height="80" rx="2" fill="#ffffff"/>
+            <rect x="0" y="18" width="60" height="16" rx="2" fill="#ffffff"/>
+          </svg>
+        </div>
+        <span class="section-label">Daily Word</span>
+        <h2>Bible Verse of the <span class="text-red">Day</span></h2>
+        <blockquote id="bibleVerse">
+          <p id="verseText">"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future."</p>
+          <cite id="verseRef">— Jeremiah 29:11</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section id="blog" class="section blog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Daily Update</span>
+        <h2>The <span class="text-red">Blog</span></h2>
+        <p class="section-desc">Fresh words every 24 hours. Encouragement, stories, and truth to keep you going.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card blog-featured">
+          <div class="blog-date">
+            <span class="blog-day" id="blogDay">31</span>
+            <span class="blog-month" id="blogMonth">MAR</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">Today's Post</span>
+            <h3 id="blogTitle">Keep Fighting — One More Round</h3>
+            <p id="blogBody">Every day you wake up is another round. You might feel like you've been knocked down, but you're still here. That means you're still in the fight. Today, choose to get back up. Choose to reach out. Choose to be alive. Your story isn't over — it's just getting started.</p>
+            <p id="blogBody2">Remember: the strongest men aren't the ones who never fall. They're the ones who keep getting up. You are that man. We believe in you.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-date">
+            <span class="blog-day">30</span>
+            <span class="blog-month">MAR</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">Yesterday</span>
+            <h3>Brotherhood Is Not Optional</h3>
+            <p>No man is meant to walk alone. The enemy wants you isolated. When you connect with brothers who understand your pain, you find strength you never knew you had...</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-date">
+            <span class="blog-day">29</span>
+            <span class="blog-month">MAR</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag">2 Days Ago</span>
+            <h3>Breaking the Chains of Addiction</h3>
+            <p>Addiction tells you that you need it. But freedom tells you the truth — you were made for more. Today, take one step. Just one. That's all it takes to start...</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM REELS SECTION -->
+  <section id="reels" class="section reels-section">
+    <div class="container">
+      <div class="reels-layout">
+        <div class="reels-text">
+          <span class="section-label">Get Inspired</span>
+          <h2 class="reels-heading">Watch. <span class="text-red">Believe.</span> Rise.</h2>
+          <p class="reels-desc">Real stories, real moments, real breakthroughs. Follow our journey and let it fuel yours. You were made for more than what you're going through.</p>
+          <div class="reels-accent"></div>
+          <p class="reels-quote">"The fight isn't over until <span class="text-red">God</span> says it's over."</p>
+          <a href="https://www.instagram.com/alive.co.za?igsh=ejEzOXB6N2Zzdzlv" target="_blank" class="btn btn-outline" style="margin-top: 20px;">Follow Us on Instagram</a>
+        </div>
+        <div class="reel-wrapper">
+          <div class="reel-embed" id="reelEmbed">
+            <iframe src="https://www.instagram.com/reel/DWQnudgDEii/embed/" width="400" height="680" frameborder="0" scrolling="no" allowtransparency="true" allowfullscreen="true" style="border-radius:12px;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIND A CHURCH SECTION -->
+  <section id="churches" class="section church-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Find Your Family</span>
+        <h2>Find a <span class="text-red">Church</span> Near You</h2>
+        <p class="section-desc">Faith is a cornerstone of recovery. Find a Christian church near you and connect with a community that cares.</p>
+      </div>
+      <div class="church-finder">
+        <div class="church-search">
+          <input type="text" id="churchLocation" placeholder="Enter your city or area (e.g. Cape Town, Johannesburg)">
+          <button class="btn btn-primary" onclick="findChurches()">Find Churches</button>
+        </div>
+        <div id="churchResults" class="church-results">
+          <div class="church-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48">
+              <path d="M18 21H6a2 2 0 0 1-2-2V10l8-7 8 7v9a2 2 0 0 1-2 2z"/>
+              <path d="M12 3v6"/>
+              <path d="M9 6h6"/>
+              <path d="M9 21v-6h6v6"/>
+            </svg>
+            <p>Enter your location above to find Christian churches near you</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / GET HELP SECTION -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Reach Out</span>
+        <h2>Get <span class="text-red">Help</span></h2>
+        <p class="section-desc">You've already taken the hardest step — admitting you need help. Now let us walk with you. Reach out. We're here 24/7.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Call Us</h4>
+              <p id="sitePhoneEl">+27 (0) 00 000 0000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email Us</h4>
+              <p id="siteEmailEl">help@alivekeept24.co.za</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Find Us</h4>
+              <p id="siteLocationEl">South Africa</p>
+            </div>
+          </div>
+          <div class="emergency-box">
+            <h4>In Crisis?</h4>
+            <p>If you or someone you know is in immediate danger, call emergency services or the SADAG helpline:</p>
+            <a href="tel:0800567567" class="btn btn-primary btn-block">SADAG: 0800 567 567</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="submitContact(event)">
+          <h3>Send Us a Message</h3>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="tel" placeholder="Your Phone Number">
+          <select required>
+            <option value="" disabled selected>What do you need help with?</option>
+            <option>Addiction Recovery</option>
+            <option>Anxiety & Depression</option>
+            <option>General Support</option>
+            <option>Join the Brotherhood</option>
+            <option>Order Alive Water</option>
+            <option>Other</option>
+          </select>
+          <textarea placeholder="Tell us what's going on. We're listening..." rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN THE BROTHERHOOD SECTION -->
+  <section id="join" class="section join-section">
+    <div class="container">
+      <div class="join-hero">
+        <img src="logo.jpg" alt="alive@keep;t 24" class="join-logo">
+        <h2 class="join-title">Join the <span class="text-red">keep;t 24</span> Brothers Ministry</h2>
+        <p class="join-subtitle">Stand with <span class="text-red">brothers</span> who fight the same battles. You don't have to do this <span class="text-red">alone</span>.</p>
+        <div class="join-divider"></div>
+        <p class="join-tagline">One brotherhood. One fight. <span class="text-red">24/7</span>.</p>
+        <button class="btn btn-primary btn-join-open" onclick="openJoinModal()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Join the Group
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN GUIDELINES MODAL -->
+  <div id="joinModal" class="join-modal" style="display:none;" onclick="if(event.target===this)closeJoinModal()">
+    <div class="join-modal-box">
+      <button class="admin-close" onclick="closeJoinModal()">&times;</button>
+      <h3>Community Guidelines</h3>
+      <p class="join-desc">By joining, you commit to keeping this a safe and God-centred space for all members.</p>
+
+      <div class="join-rules">
+        <label class="join-rule">
+          <input type="checkbox" class="join-check" onchange="checkJoinRules()">
+          <span class="join-checkmark"></span>
+          <span class="join-rule-text"><strong>No provocative language</strong> — Keep conversations respectful and uplifting at all times.</span>
+        </label>
+
+        <label class="join-rule">
+          <input type="checkbox" class="join-check" onchange="checkJoinRules()">
+          <span class="join-checkmark"></span>
+          <span class="join-rule-text"><strong>Ministry only</strong> — This group is for ministry purposes, encouragement, and support.</span>
+        </label>
+
+        <label class="join-rule">
+          <input type="checkbox" class="join-check" onchange="checkJoinRules()">
+          <span class="join-checkmark"></span>
+          <span class="join-rule-text"><strong>No sharing of ads or marketing</strong> — Do not use this group to promote products, services, or businesses.</span>
+        </label>
+
+        <label class="join-rule">
+          <input type="checkbox" class="join-check" onchange="checkJoinRules()">
+          <span class="join-checkmark"></span>
+          <span class="join-rule-text"><strong>Basic privacy for all members</strong> — What is shared in the group stays in the group. Respect everyone's story.</span>
+        </label>
+      </div>
+
+      <div id="joinLinkArea" class="join-link-area" style="display:none;">
+        <p class="join-success">You're in, brother. Welcome to the family.</p>
+        <a id="joinWhatsAppLink" href="https://chat.whatsapp.com/GxERoCXz7EHLAoBjzaHFnT" target="_blank" class="btn btn-primary btn-join">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Join WhatsApp Group
+        </a>
+      </div>
+
+      <div id="joinLockedMsg" class="join-locked">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Agree to all guidelines above to unlock the WhatsApp link
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="alive@keep;t 24" class="footer-logo">
+          <p>Fighting for every brother. Every round. Every day.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">Our Story</a>
+          <a href="#team">The Team</a>
+          <a href="#testimonials">Testimonials</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="#alive-water">Alive Water</a>
+          <a href="#bible-verse">Daily Verse</a>
+          <a href="#churches">Find a Church</a>
+          <a href="#contact">Get Help</a>
+        </div>
+        <div class="footer-links">
+          <h4>Crisis Lines</h4>
+          <a href="tel:0800567567">SADAG: 0800 567 567</a>
+          <a href="tel:0800121314">Lifeline: 0800 121 314</a>
+          <a href="tel:0800205026">Narcotics Anonymous: 0800 205 026</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 alive@keep;t 24. All rights reserved. | You are alive. Keep it that way.</p>
+        <p style="margin-top: 12px;"><a href="#" onclick="showAdminLogin(); return false;" style="color: var(--gray-dark); font-size: 0.75rem;">Admin</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ADMIN LOGIN MODAL -->
+  <div id="adminLoginModal" class="admin-modal" style="display:none;">
+    <div class="admin-modal-box">
+      <h3>Admin Login</h3>
+      <input type="text" id="adminUser" placeholder="Username">
+      <input type="password" id="adminPass" placeholder="Password">
+      <button class="btn btn-primary btn-block" onclick="adminLogin()">Login</button>
+      <p id="adminError" style="color: var(--red-light); margin-top: 10px; display:none;">Wrong username or password.</p>
+      <button class="admin-close" onclick="closeAdminLogin()">&times;</button>
+    </div>
+  </div>
+
+  <!-- ADMIN PANEL -->
+  <section id="adminPanel" class="admin-panel" style="display:none;">
+    <div class="container">
+      <div class="admin-header">
+        <h2>Admin Panel</h2>
+        <button class="btn btn-small" onclick="adminLogout()">Logout</button>
+      </div>
+
+      <!-- TABS -->
+      <div class="admin-tabs">
+        <button class="admin-tab active" onclick="switchAdminTab('blog', this)">Blog</button>
+        <button class="admin-tab" onclick="switchAdminTab('stories', this)">Stories</button>
+        <button class="admin-tab" onclick="switchAdminTab('messages', this)">Messages</button>
+        <button class="admin-tab" onclick="switchAdminTab('founder', this)">Founder</button>
+        <button class="admin-tab" onclick="switchAdminTab('team', this)">Team</button>
+        <button class="admin-tab" onclick="switchAdminTab('water', this)">Water</button>
+        <button class="admin-tab" onclick="switchAdminTab('reels', this)">Reels</button>
+        <button class="admin-tab" onclick="switchAdminTab('settings', this)">Site Settings</button>
+      </div>
+
+      <!-- BLOG EDITOR TAB -->
+      <div id="adminTab-blog" class="admin-tab-content active">
+        <h3>Update Today's Blog Post</h3>
+        <div class="admin-form-grid">
+          <div>
+            <label>Title</label>
+            <input type="text" id="blogTitleInput" placeholder="Blog post title">
+          </div>
+          <div></div>
+        </div>
+        <label>Message</label>
+        <textarea id="blogBodyInput" rows="6" placeholder="Write your message for today..."></textarea>
+        <button class="btn btn-primary btn-block" onclick="saveBlogPost()">Publish Blog Post</button>
+        <div id="blogSaveMsg"></div>
+        <div id="blogHistory" style="margin-top: 30px;"></div>
+      </div>
+
+      <!-- PENDING STORIES TAB -->
+      <div id="adminTab-stories" class="admin-tab-content">
+        <h3>Pending Testimonials</h3>
+        <p>Review stories submitted through the "Share Your Story" form. Approve to show on the site, or reject to remove.</p>
+        <div id="pendingStoriesList"></div>
+      </div>
+
+      <!-- MESSAGES TAB -->
+      <div id="adminTab-messages" class="admin-tab-content">
+        <h3>Contact Messages</h3>
+        <p>Messages received through the "Get Help" contact form.</p>
+        <div id="messagesList"></div>
+      </div>
+
+      <!-- FOUNDER TAB -->
+      <div id="adminTab-founder" class="admin-tab-content">
+        <h3>Edit Founder Section</h3>
+        <div class="admin-founder-photo-block">
+          <div class="admin-photo-preview admin-photo-preview-lg"><img id="founderPhotoPreview" src="founderphoto.jpg" alt="Founder Preview"></div>
+          <div>
+            <label>Founder Photo</label>
+            <input type="file" id="founderPhotoInput" accept="image/*" onchange="previewFounderPhoto()">
+          </div>
+        </div>
+        <div class="admin-form-grid">
+          <div>
+            <label>Section Title</label>
+            <input type="text" id="founderTitle" placeholder="e.g. From the Darkest Round to the Brightest Corner">
+            <label>Quote</label>
+            <input type="text" id="founderQuote" placeholder="Founder's quote...">
+            <label>YouTube Testimony Link</label>
+            <input type="text" id="founderVideo" placeholder="https://youtu.be/...">
+          </div>
+          <div>
+            <label>Paragraph 1</label>
+            <textarea id="founderP1" rows="4" placeholder="First paragraph of the founder's story..."></textarea>
+            <label>Paragraph 2</label>
+            <textarea id="founderP2" rows="4" placeholder="Second paragraph..."></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block" onclick="saveFounder()" style="margin-top: 20px;">Save Founder Info</button>
+        <div id="founderSaveMsg"></div>
+      </div>
+
+      <!-- TEAM TAB -->
+      <div id="adminTab-team" class="admin-tab-content">
+        <h3>Edit Team Members</h3>
+
+        <div class="admin-team-grid">
+          <div class="admin-story-card">
+            <h4 style="color: var(--red-light);">Team Member 1</h4>
+            <div class="admin-photo-preview"><img id="team1PhotoPreview" src="teammember1.jpg" alt="Preview"></div>
+            <label>Upload Photo</label>
+            <input type="file" id="team1Photo" accept="image/*" onchange="previewTeamPhoto(1)">
+            <label>Name</label>
+            <input type="text" id="team1Name" placeholder="Full name">
+            <label>Role</label>
+            <input type="text" id="team1Role" placeholder="e.g. Counselor / Mentor">
+            <label>Phone</label>
+            <input type="text" id="team1Phone" placeholder="Phone number">
+            <label>Email</label>
+            <input type="text" id="team1Email" placeholder="Email address">
+            <label>Testimonial</label>
+            <input type="text" id="team1Testimonial" placeholder="Short quote">
+          </div>
+
+          <div class="admin-story-card">
+            <h4 style="color: var(--red-light);">Team Member 2</h4>
+            <div class="admin-photo-preview"><img id="team2PhotoPreview" src="teammember2.jpg" alt="Preview"></div>
+            <label>Upload Photo</label>
+            <input type="file" id="team2Photo" accept="image/*" onchange="previewTeamPhoto(2)">
+            <label>Name</label>
+            <input type="text" id="team2Name" placeholder="Full name">
+            <label>Role</label>
+            <input type="text" id="team2Role" placeholder="Role title">
+            <label>Phone</label>
+            <input type="text" id="team2Phone" placeholder="Phone number">
+            <label>Email</label>
+            <input type="text" id="team2Email" placeholder="Email address">
+            <label>Testimonial</label>
+            <input type="text" id="team2Testimonial" placeholder="Short quote">
+          </div>
+
+          <div class="admin-story-card">
+            <h4 style="color: var(--red-light);">Team Member 3</h4>
+            <div class="admin-photo-preview"><img id="team3PhotoPreview" src="teammember3.jpg" alt="Preview"></div>
+            <label>Upload Photo</label>
+            <input type="file" id="team3Photo" accept="image/*" onchange="previewTeamPhoto(3)">
+            <label>Name</label>
+            <input type="text" id="team3Name" placeholder="Full name">
+            <label>Role</label>
+            <input type="text" id="team3Role" placeholder="Role title">
+            <label>Phone</label>
+            <input type="text" id="team3Phone" placeholder="Phone number">
+            <label>Email</label>
+            <input type="text" id="team3Email" placeholder="Email address">
+            <label>Testimonial</label>
+            <input type="text" id="team3Testimonial" placeholder="Short quote">
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-block" onclick="saveTeam()" style="margin-top: 20px;">Save Team Info</button>
+        <div id="teamSaveMsg"></div>
+      </div>
+
+      <!-- ALIVE WATER TAB -->
+      <div id="adminTab-water" class="admin-tab-content">
+        <h3>Edit Alive Water Section</h3>
+        <div class="admin-form-grid">
+          <div>
+            <label>Headline</label>
+            <input type="text" id="waterHeadline" placeholder="e.g. Pure. African. Alive.">
+            <label>Feature 1</label>
+            <input type="text" id="waterF1" placeholder="Feature point 1">
+            <label>Feature 2</label>
+            <input type="text" id="waterF2" placeholder="Feature point 2">
+          </div>
+          <div>
+            <label>Feature 3</label>
+            <input type="text" id="waterF3" placeholder="Feature point 3">
+            <label>Feature 4</label>
+            <input type="text" id="waterF4" placeholder="Feature point 4">
+            <label>Order Email</label>
+            <input type="text" id="waterEmail" placeholder="alivewater@gmail.com">
+            <label>YouTube Video Link</label>
+            <input type="text" id="waterVideo" placeholder="https://youtube.com/...">
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block" onclick="saveWater()" style="margin-top: 20px;">Save Water Info</button>
+        <div id="waterSaveMsg"></div>
+      </div>
+
+      <!-- REELS TAB -->
+      <div id="adminTab-reels" class="admin-tab-content">
+        <h3>Instagram Reel</h3>
+        <p>Paste an Instagram reel link below. The video will be embedded on the site so visitors can watch without leaving the page.</p>
+        <label>Instagram Reel URL</label>
+        <input type="text" id="reelUrlInput" placeholder="https://www.instagram.com/reel/ABC123...">
+        <button class="btn btn-primary btn-block" onclick="saveReel()" style="margin-top: 12px;">Save Reel</button>
+        <div id="reelSaveMsg"></div>
+        <div id="reelPreview" style="margin-top: 24px;"></div>
+      </div>
+
+      <!-- SITE SETTINGS TAB -->
+      <div id="adminTab-settings" class="admin-tab-content">
+        <h3>Site Contact Info</h3>
+        <div class="admin-form-grid">
+          <div>
+            <label>Phone Number (displayed on site)</label>
+            <input type="text" id="sitePhone" placeholder="+27 (0) 00 000 0000">
+            <label>Email Address (displayed on site)</label>
+            <input type="text" id="siteEmail" placeholder="help@alivekeept24.co.za">
+          </div>
+          <div>
+            <label>Location</label>
+            <input type="text" id="siteLocation" placeholder="South Africa">
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block" onclick="saveSiteSettings()" style="margin-top: 20px;">Save Site Settings</button>
+        <div id="settingsSaveMsg"></div>
+
+        <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--gray-dark);">
+          <h3>WhatsApp Group Link</h3>
+          <p>Change the WhatsApp invite link for the "Join the Brothers Ministry" section.</p>
+          <label>WhatsApp Group URL</label>
+          <input type="text" id="whatsappLinkInput" placeholder="https://chat.whatsapp.com/...">
+          <button class="btn btn-primary btn-block" onclick="saveWhatsAppLink()" style="margin-top: 12px;">Save WhatsApp Link</button>
+          <div id="whatsappSaveMsg"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
