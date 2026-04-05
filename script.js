@@ -357,6 +357,11 @@ function loadAdminPanel() {
   loadBlogHistory();
   loadPendingStories();
   loadMessages();
+  loadFounderForm();
+  loadTeamForm();
+  loadWaterForm();
+  loadReelForm();
+  loadSettingsForm();
 }
 
 // ========== ADMIN: BLOG EDITOR ==========
@@ -595,23 +600,27 @@ function loadFounderData() {
   if (data.photo) {
     const pageImg = document.getElementById('founderPhotoImg');
     if (pageImg) pageImg.src = data.photo;
-    const previewImg = document.getElementById('founderPhotoPreview');
-    if (previewImg) previewImg.src = data.photo;
   }
 }
 
 function saveFounder() {
   const existing = JSON.parse(localStorage.getItem('founderData') || '{}');
+  const title = document.getElementById('founderTitle').value.trim();
+  const p1 = document.getElementById('founderP1').value.trim();
+  const p2 = document.getElementById('founderP2').value.trim();
+  const quote = document.getElementById('founderQuote').value.trim();
+  const video = document.getElementById('founderVideo').value.trim();
   const data = {
-    title: document.getElementById('founderTitle').value.trim(),
-    p1: document.getElementById('founderP1').value.trim(),
-    p2: document.getElementById('founderP2').value.trim(),
-    quote: document.getElementById('founderQuote').value.trim(),
-    video: document.getElementById('founderVideo').value.trim(),
+    title: title || existing.title || '',
+    p1: p1 || existing.p1 || '',
+    p2: p2 || existing.p2 || '',
+    quote: quote || existing.quote || '',
+    video: video || existing.video || '',
     photo: existing.photo || ''
   };
   localStorage.setItem('founderData', JSON.stringify(data));
   loadFounderData();
+  loadFounderForm();
   showSaveMsg('founderSaveMsg', 'Founder info saved!');
 }
 
@@ -660,7 +669,7 @@ function loadTeamData() {
     if (!t) continue;
     if (t.name) setText('t' + i + 'Name', t.name);
     if (t.role) setText('t' + i + 'Role', t.role);
-    if (t.testimonial !== undefined) setText('t' + i + 'Test', t.testimonial);
+    if (t.testimonial) setText('t' + i + 'Test', t.testimonial);
     if (t.phone) {
       const phoneEl = document.getElementById('t' + i + 'Phone');
       if (phoneEl) {
@@ -675,8 +684,6 @@ function loadTeamData() {
     if (t.photo) {
       const pageImg = document.querySelector('#teamCard' + i + ' .team-photo img');
       if (pageImg) pageImg.src = t.photo;
-      const previewImg = document.getElementById('team' + i + 'PhotoPreview');
-      if (previewImg) previewImg.src = t.photo;
     }
   }
 }
@@ -685,17 +692,23 @@ function saveTeam() {
   const data = JSON.parse(localStorage.getItem('teamData') || '{}');
   for (let i = 1; i <= 3; i++) {
     const existing = data['t' + i] || {};
+    const name = document.getElementById('team' + i + 'Name').value.trim();
+    const role = document.getElementById('team' + i + 'Role').value.trim();
+    const phone = document.getElementById('team' + i + 'Phone').value.trim();
+    const email = document.getElementById('team' + i + 'Email').value.trim();
+    const testimonial = document.getElementById('team' + i + 'Testimonial').value.trim();
     data['t' + i] = {
-      name: document.getElementById('team' + i + 'Name').value.trim(),
-      role: document.getElementById('team' + i + 'Role').value.trim(),
-      phone: document.getElementById('team' + i + 'Phone').value.trim(),
-      email: document.getElementById('team' + i + 'Email').value.trim(),
-      testimonial: document.getElementById('team' + i + 'Testimonial').value.trim(),
+      name: name || existing.name || '',
+      role: role || existing.role || '',
+      phone: phone || existing.phone || '',
+      email: email || existing.email || '',
+      testimonial: testimonial || existing.testimonial || '',
       photo: existing.photo || ''
     };
   }
   localStorage.setItem('teamData', JSON.stringify(data));
   loadTeamData();
+  loadTeamForm();
   showSaveMsg('teamSaveMsg', 'Team info saved!');
 }
 
@@ -732,6 +745,10 @@ function loadTeamForm() {
     setVal('team' + i + 'Phone', t.phone);
     setVal('team' + i + 'Email', t.email);
     setVal('team' + i + 'Testimonial', t.testimonial);
+    if (t.photo) {
+      const previewImg = document.getElementById('team' + i + 'PhotoPreview');
+      if (previewImg) previewImg.src = t.photo;
+    }
   }
 }
 
@@ -755,17 +772,26 @@ function loadWaterData() {
 }
 
 function saveWater() {
+  const existing = JSON.parse(localStorage.getItem('waterData') || '{}');
+  const headline = document.getElementById('waterHeadline').value.trim();
+  const f1 = document.getElementById('waterF1').value.trim();
+  const f2 = document.getElementById('waterF2').value.trim();
+  const f3 = document.getElementById('waterF3').value.trim();
+  const f4 = document.getElementById('waterF4').value.trim();
+  const email = document.getElementById('waterEmail').value.trim();
+  const video = document.getElementById('waterVideo').value.trim();
   const data = {
-    headline: document.getElementById('waterHeadline').value.trim(),
-    f1: document.getElementById('waterF1').value.trim(),
-    f2: document.getElementById('waterF2').value.trim(),
-    f3: document.getElementById('waterF3').value.trim(),
-    f4: document.getElementById('waterF4').value.trim(),
-    email: document.getElementById('waterEmail').value.trim(),
-    video: document.getElementById('waterVideo').value.trim()
+    headline: headline || existing.headline || '',
+    f1: f1 || existing.f1 || '',
+    f2: f2 || existing.f2 || '',
+    f3: f3 || existing.f3 || '',
+    f4: f4 || existing.f4 || '',
+    email: email || existing.email || '',
+    video: video || existing.video || ''
   };
   localStorage.setItem('waterData', JSON.stringify(data));
   loadWaterData();
+  loadWaterForm();
   showSaveMsg('waterSaveMsg', 'Water info saved!');
 }
 
@@ -791,13 +817,18 @@ function loadSiteSettings() {
 }
 
 function saveSiteSettings() {
+  const existing = JSON.parse(localStorage.getItem('siteSettings') || '{}');
+  const phone = document.getElementById('sitePhone').value.trim();
+  const email = document.getElementById('siteEmail').value.trim();
+  const location = document.getElementById('siteLocation').value.trim();
   const data = {
-    phone: document.getElementById('sitePhone').value.trim(),
-    email: document.getElementById('siteEmail').value.trim(),
-    location: document.getElementById('siteLocation').value.trim()
+    phone: phone || existing.phone || '',
+    email: email || existing.email || '',
+    location: location || existing.location || ''
   };
   localStorage.setItem('siteSettings', JSON.stringify(data));
   loadSiteSettings();
+  loadSettingsForm();
   showSaveMsg('settingsSaveMsg', 'Site settings saved!');
 }
 
@@ -827,23 +858,6 @@ function loadWhatsAppLink() {
   if (el) el.href = url;
 }
 
-// ========== ADMIN: Load forms when switching tabs ==========
-const origSwitchTab = switchAdminTab;
-switchAdminTab = function(tab, btn) {
-  document.querySelectorAll('.admin-tab-content').forEach(el => el.classList.remove('active'));
-  document.querySelectorAll('.admin-tab').forEach(el => el.classList.remove('active'));
-  document.getElementById('adminTab-' + tab).classList.add('active');
-  btn.classList.add('active');
-
-  if (tab === 'stories') loadPendingStories();
-  if (tab === 'messages') loadMessages();
-  if (tab === 'blog') loadBlogHistory();
-  if (tab === 'founder') loadFounderForm();
-  if (tab === 'team') loadTeamForm();
-  if (tab === 'water') loadWaterForm();
-  if (tab === 'settings') loadSettingsForm();
-};
-
 // ========== UTILITY ==========
 function escapeHTML(str) {
   const div = document.createElement('div');
@@ -853,12 +867,12 @@ function escapeHTML(str) {
 
 function setText(id, val) {
   const el = document.getElementById(id);
-  if (el && val) el.textContent = val;
+  if (el && val != null) el.textContent = val;
 }
 
 function setVal(id, val) {
   const el = document.getElementById(id);
-  if (el && val) el.value = val;
+  if (el && val != null) el.value = val;
 }
 
 function showSaveMsg(id, text, isError) {
